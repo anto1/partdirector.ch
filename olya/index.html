@@ -3,39 +3,69 @@
 <head>
   <title>partdirector</title>
   <style>
-    img {display: block; margin: 48px auto;}
-    h1, h2 {position: fixed;font-family: inter, helvetica, sans-serif;}
+    img {display: block; margin: 64px auto 8px auto;}
+    h1, h2 {position: fixed; font-family: "Bitum", "Inter", helvetica, sans-serif; line-height: 1em; color: #121214;}
     h1 {top: 24px; left: 24px; font-size: 32px;}
     h2 {top: 24px; right: 24px; font-size: 32px;}
 
     body {margin: 360px 24px 24px 24px;}
-    p {display: block; margin: 0 auto 24px auto; text-align: center; font-size: 1.5em;}
+    p {display: block; margin: 0 auto 24px auto; font-family: "Bitum", "Inter", helvetica, sans-serif; text-align: center; font-size: 1.5em; color: #121214;}
 
     @media screen and (max-width: 1128px) {
       img {width: 100%;}
     }
-
-
-
   </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-  <h1>OV</h1>
+  <h1>OV<br>BW</h1>
+  <h2 id="num"></h2>
 
+  <img src="img/R1-03653-0000.jpg" id="start">
 
-
-  <img src="img/R1-03653-0000.jpg">
   <p>Copy</p>
 
   <img src="img/R1-03653-0001.jpg">
   <img src="img/R1-03653-0002.jpg">
   <img src="img/R1-03653-0003.jpg">
   <img src="img/R1-03653-0004.jpg">
+  <img src="img/R1-03653-0005.jpg">
+  <img src="img/R1-03653-0006.jpg">
+
+  <p>Copy 1</p>
+
+  <img src="img/R1-03653-0007.jpg">
+  <img src="img/R1-03653-0008.jpg">
 
   <script>
-   var val = document.images.length;
-   document.write("<h2>"+val+"</h2>");
- </script>
+
+    var imagesCount = document.images.length;
+    const num = document.querySelector('#num');
+    const imagesPositions = [];
+
+
+    $("img").each(function() {
+      imagesPositions.push($(this).prop("offsetTop"));
+    });
+
+    function getImageNumber(number, imagesPositions) {
+      for (var i = 0; i < imagesPositions.length; ++i) {
+        if (number < imagesPositions[i]) {
+          return i;
+        }
+      }
+    }
+
+    console.log(imagesPositions);
+
+    window.addEventListener('scroll', function(e) {
+      num.innerText = getImageNumber(window.scrollY - $(window).height()/2, imagesPositions) + 1 + "/" + imagesCount;
+    });
+
+
+    num.innerText = getImageNumber(window.scrollY - $(window).height()/2, imagesPositions) + 1 + "/" + imagesCount;
+
+  </script>
 
 </body>
 </html>
