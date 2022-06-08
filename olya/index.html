@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>partdirector</title>
+  <title>ov/bw</title>
   <style>
     @font-face {
       font-family: "btp";
       src: url("btp.woff.ttf") format('woff');
     }
-    img {display: block; margin: 64px auto 8px auto;}
-    h1, h2 {position: fixed; font-family: "btp", "Inter", helvetica, sans-serif; line-height: 1em; color: #121214;}
-    h1 {top: 24px; left: 24px; font-size: 32px;}
-    h2 {top: 24px; right: 24px; font-size: 32px;}
 
-    body {margin: 360px 24px 24px 24px;}
-    p {display: block; margin: 0 auto 24px auto; font-family: "btp", "Inter", helvetica, sans-serif; text-align: center; font-size: 1.5em; color: #121214;}
+    body {margin: 50vh 24px 24px 24px;}
+    img {display: block; margin: 64px auto 8px auto;}
+
+    h1, h2 {position: fixed; font-family: "btp", "Inter", helvetica, sans-serif; line-height: 1em; font-size: 40px; color: #121214;}
+    h1 {top: 24px; left: 24px;}
+    h2 {top: 24px; right: 24px;}
+    p, footer {font-family: "btp", "Inter", helvetica, sans-serif; font-size: 1.5em; color: #121214; display: block;}
+    p { margin: 0 auto 24px auto;  text-align: center; }
+    footer {margin: 25vh 24px 40px 24px}
 
     @media screen and (max-width: 1128px) {
       img {width: 100%;}
+      h1, h2 {font-size: 3em}
+      p, footer {font-size: 2em}
     }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -41,8 +46,9 @@
   <img src="img/R1-03653-0007.jpg">
   <img src="img/R1-03653-0008.jpg">
 
-  <script>
+  <footer>&copy; 2022, email olya@virich, telegram @olyavirich</footer>
 
+  <script>
     var imagesCount = document.images.length;
     const num = document.querySelector('#num');
     const imagesPositions = [];
