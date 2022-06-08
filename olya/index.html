@@ -83,7 +83,7 @@
     $(document).ready(function(){
         $.getJSON("images.json", function(data){
             console.log(data);
-            $("data").each(function() {
+            jQuery.each(data, function() {
               console.log($(this).prop("url"));
             });
           }).fail(function(){
