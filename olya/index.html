@@ -10,7 +10,7 @@
   <meta name="distribution" content="web">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <meta http-equiv="Content-Script-Type" content="text/javascript">
-  
+
   <style>
     @font-face {
       font-family: "btp";
@@ -21,11 +21,20 @@
     img {display: block; margin: 25vh auto 24px auto;}
 
     h1, h2 {position: fixed; font-family: "btp", "Inter", helvetica, sans-serif; line-height: 1em; font-size: 40px; color: #121214; margin: 0;}
-    h1 {top: 24px; left: 24px;}
+    h1 {top: 24px;left: 24px;}
     h2 {top: 24px; right: 24px;}
     p, footer {font-family: "btp", "Inter", helvetica, sans-serif; font-size: 1.5em; color: #121214; display: block;}
     p { margin: 0 auto 24px auto;  text-align: center; }
     footer {margin: 25vh 24px 40px 24px}
+
+    .menu {
+      display: block;
+      position: fixed;
+      top: 120px;
+      left: 24px;
+    }
+
+    .menu img {display: block; margin: 8px 0; width: 50px;}
 
     @media screen and (max-width: 1128px) {
       body {margin: 30vh 24px 24px 24px;}
@@ -38,6 +47,11 @@
 </head>
 <body>
   <h1>OV<br>BW</h1>
+
+  <div class="menu">
+    <img src="img/R1-03653-0001.jpg">
+    <img src="img/R1-03653-0002.jpg">
+  </div>
   <h2 id="num"></h2>
 
   <img src="img/R1-03653-0000.jpg" id="start">
@@ -58,11 +72,23 @@
   <img src="img/R1-03653-0009.jpg">
   <img src="img/R1-03653-0010.jpg">
   <img src="img/R1-03653-0011.jpg">
+
+  <p>Copy 2</p>
+
   <img src="img/R1-03653-0012.jpg">
 
   <footer>&copy;2022, Olya Virich, Krasnodar. <br>Email olya@virich, telegram&nbsp;@olyavirich</footer>
 
   <script>
+    $(document).ready(function(){
+        $.getJSON("images.json", function(data){
+            console.log(data.name); // Prints: Harry
+            console.log(data.age); // Prints: 14
+        }).fail(function(){
+            console.log("An error has occurred.");
+        });
+    });
+
     var imagesCount = document.images.length;
     const num = document.querySelector('#num');
     const imagesPositions = [];
