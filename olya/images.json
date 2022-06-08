@@ -1,1 +1,12 @@
-{"name": "Harry", "age": 14}
+{
+  "objects": [
+    {
+      "url": "R1-03653-0000.jpg",
+      "alt": "Copy"
+    },
+    {
+      "url": "R1-03653-0001.jpg",
+      "alt": "Copy1"
+    }
+  ]
+}
