@@ -19,6 +19,7 @@
     footer {margin: 25vh 24px 40px 24px}
 
     @media screen and (max-width: 1128px) {
+      body {margin: 30vh 24px 24px 24px;}      
       img {width: 100%; margin: 10vh auto 8px auto;}
       h1, h2 {font-size: 5em;}
       p, footer {font-size: 2.5em}
@@ -54,7 +55,6 @@
     const num = document.querySelector('#num');
     const imagesPositions = [];
 
-
     $("img").each(function() {
       imagesPositions.push($(this).prop("offsetTop"));
     });
@@ -73,8 +73,7 @@
       num.innerText = getImageNumber(window.scrollY - $(window).height()/2, imagesPositions) + 1 + "/" + imagesCount;
     });
 
-
-    num.innerText = getImageNumber(window.scrollY - $(window).height()/2, imagesPositions) + 1 + "/" + imagesCount;
+    num.innerText = 1 + "/" + imagesCount;
 
   </script>
 
