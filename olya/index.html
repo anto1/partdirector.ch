@@ -52,7 +52,7 @@
     <img src="img/R1-03653-0001.jpg">
     <img src="img/R1-03653-0002.jpg">
   </div>
-  
+
   <h2 id="num"></h2>
 
   <div class="content">
@@ -66,9 +66,9 @@
     $(document).ready(function(){
         $.getJSON("images.json", function(imagesJson){
             jQuery.each(imagesJson["objects"], function() {
-              content.innerText += ("<img src=\""+$(this).prop("url")+"\">\n");
+              content.html += ("<img src=\""+$(this).prop("url")+"\">\n");
               if($(this).prop("alt")){
-                content.innerText += ("<p>"+$(this).prop("alt")+"</p>\n");
+                content.html += ("<p>"+$(this).prop("alt")+"</p>\n");
               }
             });
           }).fail(function(){
