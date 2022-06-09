@@ -73,7 +73,7 @@
               }
             });
             console.log(stringContent);
-            content.innerText = stringContent;
+            content.html(stringContent);
           }).fail(function(){
             console.log("An error has occurred.");
         });
