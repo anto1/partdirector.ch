@@ -138,26 +138,28 @@
     var imagesCount = document.images.length;
     const num = document.querySelector('#num');
     const imagesPositions = [];
+    num.innerText = 1 + "/" + imagesCount;
 
-    $("img").each(function() {
-      imagesPositions.push($(this).prop("offsetTop"));
-    });
+    $(window).on('load', function(){
+      $("img").each(function() {
+        imagesPositions.push($(this).prop("offsetTop"));
+      });
 
-    function getImageNumber(number, imagesPositions) {
-      for (var i = 0; i < imagesPositions.length; ++i) {
-        if (number < imagesPositions[i]) {
-          return i;
+      function getImageNumber(number, imagesPositions) {
+        for (var i = 0; i < imagesPositions.length; ++i) {
+          if (number < imagesPositions[i]) {
+            return i;
+          }
         }
       }
-    }
 
-    console.log(imagesPositions);
+      console.log(imagesPositions);
 
-    window.addEventListener('scroll', function(e) {
-      num.innerText = getImageNumber(window.scrollY - $(window).height()/2, imagesPositions) + 1 + "/" + imagesCount;
+      window.addEventListener('scroll', function(e) {
+        num.innerText = getImageNumber(window.scrollY - $(window).height()/2, imagesPositions) + 1 + "/" + imagesCount;
+      });
+
     });
-
-    num.innerText = 1 + "/" + imagesCount;
 
   </script>
 
