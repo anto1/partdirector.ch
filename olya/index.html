@@ -60,7 +60,7 @@
             jQuery.each(imagesJson["objects"], function() {
               document.write("<img src=\""+$(this).prop("url")+"\">");
               if($(this).prop("alt")){
-                document.write("<p>"+$(this).prop("alt")+"</p>");
+                // document.write("<p>"+$(this).prop("alt")+"</p>");
               }
             });
           }).fail(function(){
