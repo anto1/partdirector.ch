@@ -72,6 +72,7 @@
                 stringContent += ("<p>"+$(this).prop("alt")+"</p>\n");
               }
             });
+            console.log(stringContent);
             content.html = stringContent;
           }).fail(function(){
             console.log("An error has occurred.");
