@@ -54,24 +54,27 @@
   </div>
   <h2 id="num"></h2>
 
+  <div class="content">
+  </div>
+
+  <footer>&copy;2022, Olya Virich, Krasnodar. <br>Email olya@virich, telegram&nbsp;@olyavirich</footer>
+
   <script>
+    const content = document.querySelector('content');
+
     $(document).ready(function(){
         $.getJSON("images.json", function(imagesJson){
             jQuery.each(imagesJson["objects"], function() {
-              document.write("<img src=\""+$(this).prop("url")+"\">");
+              content.innerText += ("<img src=\""+$(this).prop("url")+"\">\n");
               if($(this).prop("alt")){
-                // document.write("<p>"+$(this).prop("alt")+"</p>");
+                content.innerText += ("<p>"+$(this).prop("alt")+"</p>\n");
               }
             });
           }).fail(function(){
             console.log("An error has occurred.");
         });
     });
-  </script>
 
-  <footer>&copy;2022, Olya Virich, Krasnodar. <br>Email olya@virich, telegram&nbsp;@olyavirich</footer>
-
-  <script>
     var imagesCount = document.images.length;
     const num = document.querySelector('#num');
     const imagesPositions = [];
