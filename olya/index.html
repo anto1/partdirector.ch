@@ -62,15 +62,17 @@
 
   <script>
     const content = document.querySelector('.content');
+    var stringContent = '';
 
     $(document).ready(function(){
         $.getJSON("images.json", function(imagesJson){
             jQuery.each(imagesJson["objects"], function() {
-              content.innerhtml += ("<img src=\""+$(this).prop("url")+"\">\n");
+              stringContent += ("<img src=\""+$(this).prop("url")+"\">\n");
               if($(this).prop("alt")){
-                content.innerhtml += ("<p>"+$(this).prop("alt")+"</p>\n");
+                stringContent += ("<p>"+$(this).prop("alt")+"</p>\n");
               }
             });
+            content.html = stringContent;
           }).fail(function(){
             console.log("An error has occurred.");
         });
