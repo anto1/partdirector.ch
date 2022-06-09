@@ -66,9 +66,9 @@
     $(document).ready(function(){
         $.getJSON("images.json", function(imagesJson){
             jQuery.each(imagesJson["objects"], function() {
-              content.html += ("<img src=\""+$(this).prop("url")+"\">\n");
+              content.innerhtml += ("<img src=\""+$(this).prop("url")+"\">\n");
               if($(this).prop("alt")){
-                content.html += ("<p>"+$(this).prop("alt")+"</p>\n");
+                content.innerhtml += ("<p>"+$(this).prop("alt")+"</p>\n");
               }
             });
           }).fail(function(){
