@@ -54,43 +54,24 @@
   </div>
   <h2 id="num"></h2>
 
-  <img src="img/R1-03653-0000.jpg" id="start">
-
-  <p>Copy</p>
-
-  <img src="img/R1-03653-0001.jpg">
-  <img src="img/R1-03653-0002.jpg">
-  <img src="img/R1-03653-0003.jpg">
-  <img src="img/R1-03653-0004.jpg">
-  <img src="img/R1-03653-0005.jpg">
-  <img src="img/R1-03653-0006.jpg">
-
-  <p>Copy 1</p>
-
-  <img src="img/R1-03653-0007.jpg">
-  <img src="img/R1-03653-0008.jpg">
-  <img src="img/R1-03653-0009.jpg">
-  <img src="img/R1-03653-0010.jpg">
-  <img src="img/R1-03653-0011.jpg">
-
-  <p>Copy 2</p>
-
-  <img src="img/R1-03653-0012.jpg">
-
-  <footer>&copy;2022, Olya Virich, Krasnodar. <br>Email olya@virich, telegram&nbsp;@olyavirich</footer>
-
   <script>
     $(document).ready(function(){
         $.getJSON("images.json", function(imagesJson){
-            console.log(imagesJson["objects"]);
             jQuery.each(imagesJson["objects"], function() {
-              console.log($(this).prop("url"));
+              document.write("<img src=\""+$(this).prop("url")+"\">");
+              if($(this).prop("alt")){
+                document.write("<p>"+$(this).prop("alt")+"</p>");
+              }
             });
           }).fail(function(){
             console.log("An error has occurred.");
         });
     });
+  </script>
 
+  <footer>&copy;2022, Olya Virich, Krasnodar. <br>Email olya@virich, telegram&nbsp;@olyavirich</footer>
+
+  <script>
     var imagesCount = document.images.length;
     const num = document.querySelector('#num');
     const imagesPositions = [];
