@@ -61,7 +61,6 @@
   <footer>&copy;2022, Olya Virich, Krasnodar. <br>Email olya@virich, telegram&nbsp;@olyavirich</footer>
 
   <script>
-    const content = document.querySelector('.content');
     var stringContent = '';
 
     $(document).ready(function(){
@@ -73,7 +72,7 @@
               }
             });
             console.log(stringContent);
-            content.html(stringContent);
+            $(".content").html(stringContent);
           }).fail(function(){
             console.log("An error has occurred.");
         });
