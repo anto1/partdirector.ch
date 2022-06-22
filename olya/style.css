@@ -1,0 +1,115 @@
+@font-face {
+  font-family: "btp";
+  src: url("btp.woff.ttf") format('woff');
+}
+
+body {
+  margin: calc(50vh - 362px) 24px 24px 24px;
+}
+
+img {
+  display: block;
+  margin: 144px auto 24px auto;
+}
+
+h1,
+h2,
+h3 {
+  position: fixed;
+  font-family: "btp", "Inter", helvetica, sans-serif;
+  line-height: 1em;
+  font-size: 40px;
+  color: #121214;
+  margin: 0;
+}
+
+h1 {
+  top: 24px;
+  left: 24px;
+}
+
+h2 {
+  top: 24px;
+  right: 24px;
+}
+
+h3 {
+  top: 24px;
+  left: 240px;
+}
+
+p {
+  font-family: "btp", "Inter", helvetica, sans-serif;
+  font-size: 1.5em;
+  color: #121214;
+  display: block;
+}
+
+p {
+  margin: 0 auto 24px auto;
+  text-align: center;
+}
+
+footer {
+  margin: 50vh 0 48px 0;
+}
+
+footer p {
+  font-size: 1.5em;
+  text-align: left;
+  display: block;
+  margin-left: 216px !important;
+  width: 72vh;
+}
+
+footer p:last-child {
+  margin-left: 0px !important;}
+
+a {
+  text-decoration: underline;
+  color: #121214;
+}
+
+a:hover {
+  color: #929294;
+}
+
+.menu {
+  display: block;
+  position: fixed;
+  top: 120px;
+  left: 24px;
+}
+
+.menu img {
+  display: block;
+  margin: 8px 0;
+  width: 50px;
+}
+
+
+
+@media screen and (max-width: 960px) {
+  body {
+    margin: 50vh 24px 24px 24px;
+  }
+
+  img {
+    width: 100%;
+    margin: 10vh auto 24px auto;
+  }
+
+  h1,
+  h2 {
+    font-size: 5em;
+  }
+
+  p,
+  footer {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    display: none;
+  }
+}
