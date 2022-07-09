@@ -42,6 +42,10 @@ h3 {
   right: 24px;
 }
 
+ul {
+  list-style-type: "—";
+}
+
 p, ul {
   font-family: "btp", "Inter", helvetica, sans-serif;
   font-size: 20px;
