@@ -46,7 +46,7 @@ ul {
   list-style-type: "—";
 }
 
-p, ul {
+p, ul li {
   font-family: "btp", "Inter", helvetica, sans-serif;
   font-size: 20px;
   color: #121214;
