@@ -42,7 +42,7 @@ h3 {
   right: 24px;
 }
 
-p {
+p, ul {
   font-family: "btp", "Inter", helvetica, sans-serif;
   font-size: 20px;
   color: #121214;
@@ -143,7 +143,7 @@ a:hover {
     margin: 0;
   }
 
-  p,
+  p, ul, 
   footer {
     font-size: 20px;
   }
