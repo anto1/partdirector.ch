@@ -34,7 +34,7 @@ h1 {
   left: 24px;
 }
 
-h2, ul {
+h2 {
   left: 240px;
 }
 
@@ -43,7 +43,8 @@ h3 {
 }
 
 ul {
-  list-style-type: "—";
+  list-style-type: none;
+  left: 240px;
 }
 
 p, ul li {
@@ -51,6 +52,10 @@ p, ul li {
   font-size: 20px;
   color: #121214;
   display: block;
+}
+
+ul li {
+  display: inline-block;
 }
 
 p {
