@@ -55,10 +55,6 @@ p, ul li {
   display: block;
 }
 
-ul li {
-  display: inline-block;
-}
-
 p {
   margin: 0 auto 24px auto;
   text-align: center;
