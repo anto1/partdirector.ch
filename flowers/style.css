@@ -49,23 +49,13 @@ h3 {
   right: 24px;
 }
 
-p {
-  font-family: "Peter", "Inter", helvetica, sans-serif;
-  font-size: 40px;
-  color: #121214;
-  display: block;
-}
-
-p {
-  margin: 0 auto 24px auto;
-  text-align: center;
-}
 
 footer {
   margin: 50vh 0 24px 0;
 }
 
-footer p, .about p, .preface p {
+p, footer p, .about p, .preface p {
+  color: #121214;  
   font-size: 40px;
   text-align: left;
   display: block;
