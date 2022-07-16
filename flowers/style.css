@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Peter";
-  src: url("peter-p.woff") format('woff');
+  src: url("peter-p2.woff") format('woff');
 }
 
 * {
-  font-family: "Peter", "Inter", helvetica, sans-serif;  
+  font-family: "Peter", "Inter", helvetica, sans-serif;
 }
 
 body {
