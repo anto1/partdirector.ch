@@ -6,6 +6,7 @@
 * {
   font-family: "Peter", "Inter", helvetica, sans-serif;
   font-variant-ligatures: normal;
+  font-variant-numeric: tabular-nums;
 }
 
 body {
