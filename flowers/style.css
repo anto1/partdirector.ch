@@ -1,6 +1,10 @@
 @font-face {
-  font-family: "peter-p";
+  font-family: "Peter";
   src: url("peter-p.woff") format('woff');
+}
+
+* {
+  font-family: "Peter", "Inter", helvetica, sans-serif;  
 }
 
 body {
@@ -17,7 +21,7 @@ h2,
 h3,
 h4 {
   font-weight: normal;
-  font-family: "peter-p", "Inter", helvetica, sans-serif;
+  font-family: "Peter", "Inter", helvetica, sans-serif;
   font-size: 52px;
   color: #121214;
 }
@@ -43,7 +47,7 @@ h3 {
 }
 
 p {
-  font-family: "peter-p", "Inter", helvetica, sans-serif;
+  font-family: "Peter", "Inter", helvetica, sans-serif;
   font-size: 20px;
   color: #121214;
   display: block;
