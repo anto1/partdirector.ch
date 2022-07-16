@@ -5,6 +5,7 @@
 
 * {
   font-family: "Peter", "Inter", helvetica, sans-serif;
+  font-variant-ligatures: normal;
 }
 
 body {
