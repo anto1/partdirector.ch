@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "peterp";
+  src: url("peter-p.woff") format('woff');
+}
+
+body {
+  margin: calc(50vh - 362px) 24px 24px 24px;
+}
+
+img {
+  display: block;
+  margin: calc(50vh - 362px) auto 24px auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  font-family: "peterp", "Inter", helvetica, sans-serif;
+  font-size: 52px;
+  color: #121214;
+}
+
+h1,
+h2,
+h3 {
+  position: fixed;
+  margin: 0;
+  top: 24px;
+}
+
+h1 {
+  left: 24px;
+}
+
+h2 {
+  left: 240px;
+}
+
+h3 {
+  right: 24px;
+}
+
+p {
+  font-family: "btp", "Inter", helvetica, sans-serif;
+  font-size: 20px;
+  color: #121214;
+  display: block;
+}
+
+p {
+  margin: 0 auto 24px auto;
+  text-align: center;
+}
+
+footer {
+  margin: 50vh 0 24px 0;
+}
+
+footer p, .about p, .preface p {
+  font-size: 20px;
+  text-align: left;
+  display: block;
+  margin-left: 216px;
+  max-width: 72vh;
+}
+
+footer p:last-child {
+  margin-left: 0px !important;}
+
+a {
+  text-decoration: underline;
+  color: #121214;
+}
+
+a:hover {
+  color: #929294;
+}
+
+.mobileHeader {
+  display: none;
+}
+
+.www {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 72vw;
+}
+
+.preface {
+  margin-top: 50vh;
+}
+
+.imageSingle {
+  max-height: 45vw;
+  max-width: 90vh;
+}
+
+.imagesDouble {
+  display: block;
+  margin: calc(50vh - 362px) auto 24px auto;
+  text-align: center;
+}
+
+.imagesDouble img {
+  display: inline-block;
+  max-width: 45vw;
+  max-height: 90vh;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    margin: 168px 24px 24px 24px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    margin: 10vh auto 24px auto;
+  }
+
+  .imageFirst {
+    margin-top: 24px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 41px;
+  }
+
+  h2 {
+    display: none;
+  }
+
+  h1,
+  h2,
+  h3 {
+    position: fixed;
+    margin: 0;
+  }
+
+  p,
+  footer {
+    font-size: 20px;
+  }
+
+  footer p, .about p, .preface p {
+    margin-left: 0px !important;
+  }
+
+  .mobileHeader {
+    font-size: 41px;
+    display: block;
+    position: relative;
+    text-align: left;
+  }
+
+  .mobileBack {
+    text-align: right;
+    display: block;
+    top: 24px;
+    right: 24px;
+    position: fixed;
+  }
+}
