@@ -16,6 +16,7 @@ body {
 img {
   display: block;
   margin: calc(50vh - 362px) auto 24px auto;
+  max-width: 1080px;
 }
 
 h1,
