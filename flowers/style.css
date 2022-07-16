@@ -49,7 +49,7 @@ h3 {
 
 p {
   font-family: "Peter", "Inter", helvetica, sans-serif;
-  font-size: 20px;
+  font-size: 40px;
   color: #121214;
   display: block;
 }
@@ -64,7 +64,7 @@ footer {
 }
 
 footer p, .about p, .preface p {
-  font-size: 20px;
+  font-size: 40px;
   text-align: left;
   display: block;
   margin-left: 216px;
@@ -150,7 +150,7 @@ a:hover {
 
   p,
   footer {
-    font-size: 20px;
+    font-size: 40px;
   }
 
   footer p, .about p, .preface p {
