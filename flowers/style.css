@@ -16,15 +16,13 @@ body {
 img {
   display: block;
   margin: calc(50vh - 362px) auto 24px auto;
-  max-width: 1080px;
+  width: 1080px;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-weight: normal;
-  font-family: "Peter", "Inter", helvetica, sans-serif;
   font-size: 72px;
   color: #121214;
 }
@@ -55,7 +53,7 @@ footer {
 }
 
 p, footer p, .about p, .preface p {
-  color: #121214;  
+  color: #121214;
   font-size: 40px;
   text-align: left;
   display: block;
