@@ -1,22 +1,164 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>partdirector</title>
-  <style>
-    * {font-family: inter, helvetica, sans-serif; color: #40403e;}
-    img {height: 80vh;}
-    div {
-         display: grid;
-         place-items: center;
-         align-items: center;
-         height: 95vh;
-       }
-  </style>
-</head>
-<body>
-  <div>
-    <img src="DSCF2236-preview.jpg">
-    <small>Forte Dei Marmi, 2021</small>
-  </div>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        margin: 2.5vw;
+        padding: 0;
+        padding-bottom: 7.5vw;
+      }
+
+      * {
+        font-family: "Inter", "helvetica", sans-serif;
+        font-size: 2.5vw;
+        font-weight: normal;
+        color: #222222;
+      }
+
+      p {
+        font-size: 2vw;
+        padding: 0;
+        margin-top: 2.5vw;
+        max-width: 45vw;
+        display: block;
+      }
+
+      h1, h2 {
+        display: block;
+        width: 45vw;
+        margin-top: 0;
+      }
+
+
+      .container {
+        margin-top: 2.5vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2.5vw;
+      }
+
+      .container div {
+        padding: 2.5vw;
+        display: flex;
+        background-color: #f3f3f3;
+        aspect-ratio: 1;
+        justify-content: left;
+        align-items: bottom;
+        background-size: cover;
+      }
+
+      footer {
+        display: block;
+        bottom: 2.5vw;
+        left: 2.5 vw;
+        position: fixed;
+
+      }
+
+      #cv {
+        margin-top: 2.5vw;
+        display: block;
+        background: #f3f3f3;
+        padding: 2.5vw;
+        aspect-ratio: 1;
+      }
+
+      @media screen and (max-width: 1024px) {
+
+        * {
+          font-size: 10vw;
+        }
+
+        body {
+          margin: 5vw;
+          padding-bottom: 15vw;
+        }
+
+        h1, h2, p {
+          width: 90vw;
+        }
+
+        h1, h2 {
+          margin: 0 0 5vw 0;
+        }
+
+        p {
+          font-size: 5vw;
+          width: 90vw;
+          margin-top: 5vw;
+        }
+
+        .container {
+          margin-top: 5vw;
+          grid-template-columns: 1fr;
+          grid-gap: 5vw;
+        }
+
+        footer {
+          margin-top: 10vw;
+        }
+
+      }
+
+      #tba {
+        background-image: url('00-tba.jpg');
+        color: white;
+      }
+
+      #fintech {
+        background-image: url('01-fintech.jpg');
+        color: white;
+      }
+
+      #split {
+        background-image: url('00-split.jpg');
+      }
+
+      #ads {
+        background-image: url('02-ads.jpg');
+      }
+
+      #auto {
+        background-image: url('04-auto.jpg');
+        color: white;
+      }
+
+      #realty {
+        background-image: url('05-realty.jpg');
+        color: white;
+      }
+
+      #typo {
+        background-image: url('10-typo.jpg');
+      }
+
+      #other {
+        background-image: url('99-other.jpg');
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Anton Prokopev, partdirector</h1>
+    <div class="container">
+      <div id="tba">TBA</div>
+      <div id="fintech">Yandex Fintech</div>
+      <div id="split">Split BNPL</div>
+      <div id="ads">Yandex Ads</div>
+      <div id="auto">Auto.ru</div>
+      <div id="realty">Yandex Realty</div>
+      <!-- <div>Ad Marginem</div> -->
+      <div id="typo">Typography</div>
+      <div id="other">Other</div>
+    </div>
+    <p>Anton&nbsp;— communication art director, team lead &&nbsp;designer in fintech and classifieds industries.</p><p>Anton is responsible for brand developing and brand keeping for companies and individuals.</p>
+
+    <footer>
+      <a href="https://linkedin.com/in/prokopev/">Linkedin</a>,
+      <a href="https://t.me/aprokopiev">Tg</a>
+    </footer>
+  </body>
 </html>
