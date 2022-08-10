@@ -1,0 +1,14 @@
+/* Copyright (c) 2017 by Gayane Bagdasaryan, Vyacheslav Kirilenko. All rights reserved. */
+
+@font-face {
+	font-family: 'Aeroport';
+	src: url('Aeroport-regular.eot');
+	src:
+	     url('Aeroport-regular.eot?#iefix') format('embedded-opentype'),
+	     url('Aeroport-regular.woff2') format('woff2'),
+	     url('Aeroport-regular.woff') format('woff'),
+	     url('Aeroport-regular.ttf') format('truetype'),
+	     url('Aeroport-regular.svg#Aeroport') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
