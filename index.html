@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Anton Prokopev, Partdirector</title>
     <style>
       @font-face {
       	font-family: 'Aeroport';
@@ -36,10 +36,10 @@
       }
 
       p {
-        font-size: var(--desktop-module2x);
+        font-size: 1.875vw;
         padding: 0;
-        margin-top: var(--desktop-module);
-        width: 65vw;
+        margin-top: var(--desktop-module2x);
+        width: 45vw;
         display: block;
       }
 
@@ -58,19 +58,27 @@
 
       .container div {
         padding: var(--desktop-module);
-        padding-top: var(--desktop-module);
         display: flex;
         background-color: #f3f3f3;
         aspect-ratio: 1;
         justify-content: left;
         align-items: bottom;
         background-size: cover;
+        line-height: 2vw;
       }
 
       footer {
         display: block;
         bottom: var(--desktop-module);
         position: fixed;
+      }
+
+      .cv {
+        margin-top: 7.5vw;
+        font-size: 1.875vw;
+      }
+
+      .cv p {
       }
 
       @media screen and (max-width: 1024px) {
@@ -106,6 +114,10 @@
           margin-top: 5vw;
           grid-template-columns: 1fr;
           grid-gap: 5vw;
+        }
+
+        .container div {
+          padding: 5vw;
         }
 
         footer {
@@ -171,6 +183,14 @@
 
     <p>Anton&nbsp;— communication art director, team lead &&nbsp;designer in fintech and classifieds industries. He&nbsp;is&nbsp;responsible for brand developing and brand keeping for companies and individuals.</p>
     <p>Currently in Yandex Fintech.</p>
+
+    <!--
+    <div class="container cv">
+      <div>Experience Yandex Fintech, Yandex Classifieds, Infographics Studio, Ad Marginem, Underground Ministry of Culture, Freelance</div>
+      <div>Study</div>
+      <div>Contact</div>
+    </div>
+    -->
 
     <footer>
       <a href="https://linkedin.com/in/prokopev/">Linkedin</a>,
