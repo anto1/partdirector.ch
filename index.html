@@ -18,8 +18,8 @@
       }
 
       :root {
-        --desktop-module: 1.25vw;
-        --desktop-module2x: 2.5vw;
+        --desktop-module: 2vw;
+        --desktop-module2x: 3vw;
       }
 
       body {
@@ -36,10 +36,10 @@
       }
 
       p {
-        font-size: 1.875vw;
+        font-size: 3vw;
         padding: 0;
         margin-top: var(--desktop-module2x);
-        width: 45vw;
+        width: 66vw;
         display: block;
       }
 
@@ -50,7 +50,6 @@
       }
 
       .container {
-        margin-top: var(--desktop-module);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: var(--desktop-module);
@@ -65,20 +64,18 @@
         align-items: bottom;
         background-size: cover;
         line-height: 2vw;
+        cursor: pointer;
+      }
+
+      .header, .about {
+        display: block;
+        height: 30.7vw;
       }
 
       footer {
         display: block;
         bottom: var(--desktop-module);
         position: fixed;
-      }
-
-      .cv {
-        margin-top: 7.5vw;
-        font-size: 1.875vw;
-      }
-
-      .cv p {
       }
 
       @media screen and (max-width: 1024px) {
@@ -99,15 +96,17 @@
           margin: 0;
         }
 
-        h1 {
-          margin-bottom: 70vw;
-        }
-
         p {
           display: block;
-          font-size: 5vw;
-          width: 90vw !important;
+          font-size: 6.75vw;
+          width: 80vw !important;
           margin-top: 5vw;
+        }
+
+        .header, .about {
+          display: block;
+          height: 90vw;
+          margin-bottom: 45vw;
         }
 
         .container {
@@ -118,6 +117,7 @@
 
         .container div {
           padding: 5vw;
+          padding-top: 8vw;
         }
 
         footer {
@@ -168,7 +168,8 @@
     </style>
   </head>
   <body>
-    <h1>Anton Prokopev, Partdirector</h1>
+    <h1 class="header">Anton Prokopev,<br>Partdirector</h1>
+
     <div class="container">
       <div id="tba">TBA</div>
       <div id="fintech">Yandex Fintech</div>
@@ -181,8 +182,10 @@
       <div id="other">Other</div>
     </div>
 
-    <p>Anton&nbsp;— communication art director, team lead &&nbsp;designer in fintech and classifieds industries. He&nbsp;is&nbsp;responsible for brand developing and brand keeping for companies and individuals.</p>
-    <p>Currently in Yandex Fintech.</p>
+    <div class="about">
+      <p>Anton&nbsp;— communication art director, team lead &&nbsp;designer in fintech and classified industries. He&nbsp;is&nbsp;responsible for brand developing and brand keeping for companies and individuals.</p>
+      <p>Currently in Yandex Fintech.</p>
+    </div>
 
     <!--
     <div class="container cv">
