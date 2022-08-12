@@ -25,7 +25,7 @@
       body {
         margin: var(--desktop-module);
         padding: 0;
-        padding-bottom: 7.5vw;
+        padding-bottom: 9vw;
       }
 
       * {
@@ -64,7 +64,6 @@
         align-items: bottom;
         background-size: cover;
         line-height: 2vw;
-        cursor: pointer;
       }
 
       .header, .about {
@@ -72,13 +71,41 @@
         height: 30.7vw;
       }
 
+      .project {
+        padding: 2vw;
+        background-color: #f3f3f3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 100;
+        bottom: 0;
+        display: none;
+      }
+
+      .project .close {
+        display: block;
+        top: 2vw;
+        right: 2vw;
+        position: fixed;
+      }
+
       footer {
         display: block;
         bottom: var(--desktop-module);
         position: fixed;
+        z-index: 200;
       }
 
-      @media screen and (max-width: 1024px) {
+
+
+      @media screen and (min-width: 560px) and (max-width: 1024px) {
+        .container {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      @media screen and (max-width: 560px) {
         * {
           font-size: 10vw;
         }
@@ -187,13 +214,10 @@
       <p>Currently in Yandex Fintech.</p>
     </div>
 
-    <!--
-    <div class="container cv">
-      <div>Experience Yandex Fintech, Yandex Classifieds, Infographics Studio, Ad Marginem, Underground Ministry of Culture, Freelance</div>
-      <div>Study</div>
-      <div>Contact</div>
+    <div class="project">
+      <h1>CV</h1>
+      <a href="#" class="close">✕ Close</a>
     </div>
-    -->
 
     <footer>
       <a href="https://linkedin.com/in/prokopev/">Linkedin</a>,
