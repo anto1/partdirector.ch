@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Aeroport';
+  src: url('aeroport/Aeroport-regular.eot');
+  src:
+       url('aeroport/Aeroport-regular.eot?#iefix') format('embedded-opentype'),
+       url('aeroport/Aeroport-regular.woff2') format('woff2'),
+       url('aeroport/Aeroport-regular.woff') format('woff'),
+       url('aeroport/Aeroport-regular.ttf') format('truetype'),
+       url('aeroport/Aeroport-regular.svg#Aeroport') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --desktop-module: 2vw;
+  --desktop-module2x: 3vw;
+}
+
+body {
+  margin: var(--desktop-module);
+  padding: 0;
+  padding-bottom: 11vw;
+}
+
+* {
+  font-family: "Aeroport", "Helvetica", sans-serif;
+  font-size: var(--desktop-module2x);
+  font-weight: normal;
+  line-height: 110%;
+  color: #222222;
+}
+
+p {
+  font-size: 3vw;
+  padding: 0;
+  margin-top: var(--desktop-module2x);
+  width: 66vw;
+  display: block;
+}
+
+h1, h2 {
+  display: block;
+  width: 45vw;
+  margin-top: 0;
+}
+
+span {
+  color: #cccccc;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: var(--desktop-module);
+}
+
+.container div {
+  padding: var(--desktop-module);
+  display: flex;
+  background-color: #f3f3f3;
+  aspect-ratio: 1;
+  justify-content: left;
+  align-items: bottom;
+  background-size: cover;
+  line-height: 2vw;
+}
+
+.header, .about {
+  display: block;
+  height: 30.7vw;
+}
+
+.project {
+  padding: 2vw;
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  bottom: 0;
+  display: none;
+}
+
+.project .close {
+  display: block;
+  top: 2vw;
+  right: 2vw;
+  position: fixed;
+}
+
+footer {
+  display: block;
+  bottom: var(--desktop-module);
+  position: fixed;
+  z-index: 200;
+}
+
+
+
+@media screen and (min-width: 720px) and (max-width: 1280px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .header, .about {
+    display: block;
+    height: 47vw;
+  }
+
+
+}
+
+@media screen and (max-width: 720px) {
+  * {
+    font-size: 10vw;
+  }
+
+  body {
+    margin: 5vw;
+    padding-bottom: 50vw;
+  }
+
+  h1, h2, p {
+    width: 90vw;
+  }
+
+  h1, h2 {
+    margin: 0;
+  }
+
+  p {
+    display: block;
+    font-size: 6.75vw;
+    width: 80vw !important;
+    margin-top: 5vw;
+  }
+
+  .header, .about {
+    display: block;
+    height: 93vw;
+  }
+
+  .container {
+    margin-top: 5vw;
+    grid-template-columns: 1fr;
+    grid-gap: 5vw;
+  }
+
+  .container div {
+    padding: 5vw;
+    padding-top: 8vw;
+  }
+
+  footer {
+    margin-top: 10vw;
+  }
+
+}
