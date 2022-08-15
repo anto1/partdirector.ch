@@ -26,14 +26,13 @@ body {
   font-family: "Aeroport", "Helvetica", sans-serif;
   font-size: var(--desktop-module2x);
   font-weight: normal;
-  line-height: 110%;
+  line-height: 100%;
   color: #222222;
 }
 
 p {
   font-size: 3vw;
   padding: 0;
-  margin-top: var(--desktop-module2x);
   width: 66vw;
   display: block;
 }
@@ -44,8 +43,8 @@ h1, h2 {
   margin-top: 0;
 }
 
-span {
-  color: #cccccc;
+span, span a, .cvHeader {
+  color: #BAA697;
 }
 
 .container {
@@ -87,6 +86,10 @@ span {
   top: 2vw;
   right: 2vw;
   position: fixed;
+}
+
+.cvHeader {
+  margin-top: 10vw;
 }
 
 footer {
