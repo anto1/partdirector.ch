@@ -26,7 +26,7 @@ body {
   font-family: "Aeroport", "Helvetica", sans-serif;
   font-size: var(--desktop-module2x);
   font-weight: normal;
-  line-height: 100%;
+  line-height: 110%;
   color: #222222;
 }
 
@@ -99,9 +99,14 @@ footer {
   z-index: 200;
 }
 
-
-
 @media screen and (min-width: 720px) and (max-width: 1280px) {
+
+  a, body, h1, h2, h3, p, span {
+    font-size: 7.5vw;
+    line-height: 110%;
+    width: 90vw;
+  }
+
   .container {
     grid-template-columns: 1fr 1fr;
   }
@@ -110,12 +115,10 @@ footer {
     display: block;
     height: 47vw;
   }
-
-
 }
 
 @media screen and (max-width: 720px) {
-  * {
+  a, body, h1, h2, h3, p {
     font-size: 10vw;
   }
 
@@ -134,7 +137,6 @@ footer {
 
   p {
     display: block;
-    font-size: 6.75vw;
     width: 80vw !important;
     margin-top: 5vw;
   }
