@@ -30,11 +30,11 @@ body {
   color: #222222;
 }
 
-p {
-  font-size: 3vw;
+p, .hidden p {
   padding: 0;
   width: 66vw;
   display: block;
+  margin-bottom: 0;
 }
 
 h1, h2 {
@@ -92,33 +92,38 @@ span, span a, .cvHeader {
   margin-top: 10vw;
 }
 
-footer {
+footer, .switcher {
   display: block;
-  bottom: var(--desktop-module);
+  left: 0; right: 0;
+  background: white;
   position: fixed;
-  z-index: 200;
+  bottom: 0;
+  padding: var(--desktop-module);
 }
 
-@media screen and (min-width: 720px) and (max-width: 1280px) {
-
-  a, body, h1, h2, h3, p, span {
-    font-size: 7.5vw;
-    line-height: 110%;
-    width: 90vw;
-  }
-
-  .container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .header, .about {
-    display: block;
-    height: 47vw;
-  }
+.hidden {
+    max-height:0px;
+    margin: 0;
+    overflow: hidden;
+    -webkit-transition: max-height, 0.5s;
+    -moz-transition: max-height, 0.5s;
+    -ms-transition: max-height, 0.5s;
+    -o-transition: max-height, 0.5s;
+    transition: max-height, 0.5s;
 }
 
-@media screen and (max-width: 720px) {
-  a, body, h1, h2, h3, p {
+.hidden.open {
+    max-height: 500px;
+    margin-top: var(--desktop-module);
+     -webkit-transition: max-height, 0.5s;
+    -moz-transition: max-height, 0.5s;
+    -ms-transition: max-height, 0.5s;
+    -o-transition: max-height, 0.5s;
+    transition: max-height, 0.5s;
+}
+
+@media screen and (max-width: 960px) {
+  a, body, h1, h2, h3, p, .hidden p {
     font-size: 10vw;
   }
 
