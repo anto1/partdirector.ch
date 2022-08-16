@@ -102,6 +102,7 @@ footer, .switcher {
 }
 
 .hidden {
+    color: #BAA697;
     max-height:0px;
     margin: 0;
     overflow: hidden;
