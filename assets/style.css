@@ -195,5 +195,37 @@ p {
   ol {
     padding-inline-start: 4.5vw;
   }
+}
 
+@media screen and (min-width: 2400px) {
+  h1, h2, h3, div, body {
+    font-size: 2vw;
+  }
+
+  body {
+    margin: 1vw;
+    padding-bottom: 12vw;
+  }
+
+  .container {
+    margin-top: 1vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1vw;
+  }
+
+  .container div, footer, .switcher {
+    padding: 1vw;
+  }
+
+  .about, .cv p, ol li {
+    width: 48vw;
+  }
+
+  ol li, ol li p {
+    margin-bottom: 1vw;
+  }
+
+  ol {
+    padding-inline-start: 3vw;
+  }
 }
