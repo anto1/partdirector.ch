@@ -1,3 +1,5 @@
+/* Aeroport */
+
 @font-face {
   font-family: 'Aeroport';
   src: url('aeroport/Aeroport-regular.eot');
@@ -11,95 +13,45 @@
   font-style: normal;
 }
 
-:root {
-  --desktop-module: 2vw;
-  --desktop-module2x: 3vw;
-}
-
-body {
-  margin: var(--desktop-module);
-  padding: 0;
-  padding-bottom: 11vw;
-}
+/* Basic Rules */
 
 * {
   font-family: "Aeroport", "Helvetica", sans-serif;
-  font-size: var(--desktop-module2x);
   font-weight: normal;
   line-height: 110%;
   color: #222222;
 }
 
-p, .hidden p {
-  padding: 0;
-  width: 66vw;
-  display: block;
-  margin-bottom: 0;
-}
-
-h1, h2 {
-  display: block;
-  width: 45vw;
-  margin-top: 0;
-}
-
-span, span a, .cvHeader {
-  color: #BAA697;
-}
-
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: var(--desktop-module);
 }
 
 .container div {
-  padding: var(--desktop-module);
   display: flex;
   background-color: #f3f3f3;
   aspect-ratio: 1;
   justify-content: left;
-  align-items: bottom;
   background-size: cover;
-  line-height: 2vw;
-}
-
-.header, .about {
-  display: block;
-  height: 30.7vw;
-}
-
-.project {
-  padding: 2vw;
-  background-color: #f3f3f3;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  z-index: 100;
-  bottom: 0;
-  display: none;
-}
-
-.project .close {
-  display: block;
-  top: 2vw;
-  right: 2vw;
-  position: fixed;
-}
-
-.cvHeader {
-  margin-top: 10vw;
 }
 
 footer, .switcher {
   display: block;
-  left: 0; right: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background: white;
   position: fixed;
-  bottom: 0;
-  padding: var(--desktop-module);
 }
+
+span, span a, .subheader, .hidden, .hidden a {
+  color: #BAA697;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* Media Queries */
 
 .hidden {
     color: #BAA697;
@@ -115,7 +67,7 @@ footer, .switcher {
 
 .hidden.open {
     max-height: 500px;
-    margin-top: var(--desktop-module);
+    margin-top: 2vw;
      -webkit-transition: max-height, 0.5s;
     -moz-transition: max-height, 0.5s;
     -ms-transition: max-height, 0.5s;
@@ -123,9 +75,17 @@ footer, .switcher {
     transition: max-height, 0.5s;
 }
 
-@media screen and (max-width: 960px) {
-  a, body, h1, h2, h3, p, .hidden p {
-    font-size: 10vw;
+
+
+/* Media Queries */
+
+@media screen and (min-width: 0px) {
+  h1, h2, h3, div, body {
+    font-size: 6vw;
+  }
+
+  .margintop {
+    margin-top: 20vw;
   }
 
   body {
@@ -133,24 +93,9 @@ footer, .switcher {
     padding-bottom: 50vw;
   }
 
-
-  h1, h2, p {
-    width: 90vw;
-  }
-
-  h1, h2 {
-    margin: 0;
-  }
-
-  p {
+  .header {
     display: block;
-    width: 80vw !important;
-    margin-top: 5vw;
-  }
-
-  .header, .about {
-    display: block;
-    height: 93vw;
+    height: 90vw;
   }
 
   .container {
@@ -159,13 +104,96 @@ footer, .switcher {
     grid-gap: 5vw;
   }
 
-  .container div {
+  .container div, footer, .switcher {
     padding: 5vw;
-    padding-top: 8vw;
   }
 
-  footer {
-    margin-top: 10vw;
+  .about, .cv p {
+    width: 90vw;
+  }
+
+  ol li, ol li p, ol li {
+    margin-bottom: 5vw;
+  }
+
+  ol {
+    padding-inline-start: 9vw;
+  }
+
+}
+
+@media screen and (min-width: 560px) {
+  h1, h2, h3, div, body {
+    font-size: 5vw;
+  }
+
+  body {
+    margin: 3vw;
+    padding-bottom: 12vw;
+  }
+
+  .header {
+    display: block;
+    height: 45vw;
+  }
+
+  .container {
+    margin-top: 3vw;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw;}
+
+  .container div, footer, .switcher {
+      padding: 3vw;
+  }
+
+  .about, .cv p {
+    width: 80vw;
+  }
+
+  ol li, ol li p, ol li {
+    margin-bottom: 3vw;
+  }
+
+  ol {
+    padding-inline-start: 7vw;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  h1, h2, h3, div, body {
+    font-size: 3vw;
+  }
+
+  body {
+    margin: 2vw;
+    padding-bottom: 12vw;
+  }
+
+  .header {
+    display: block;
+    height: 31vw;
+  }
+
+  .container {
+    margin-top: 2vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vw;
+  }
+
+  .container div, footer, .switcher {
+    padding: 2vw;
+  }
+
+  .about, .cv p, ol li {
+    width: 63.3vw;
+  }
+
+  ol li, ol li p {
+    margin-bottom: 2vw;
+  }
+
+  ol {
+    padding-inline-start: 4.5vw;
   }
 
 }
