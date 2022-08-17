@@ -51,6 +51,10 @@ p {
   margin-bottom: 0;
 }
 
+ul {
+  list-style-type: square;
+}
+
 /* Media Queries */
 
 .hidden {
@@ -109,14 +113,14 @@ p {
   }
 
   .about, .cv p {
-    width: 90vw;
+    width: auto;
   }
 
-  ol li, ol li p, ol li {
+  li, li p {
     margin-bottom: 5vw;
   }
 
-  ol {
+  ol, ul {
     padding-inline-start: 9vw;
   }
 
@@ -150,11 +154,11 @@ p {
     width: 80vw;
   }
 
-  ol li, ol li p, ol li {
+  li, li p{
     margin-bottom: 3vw;
   }
 
-  ol {
+  ol, ul {
     padding-inline-start: 7vw;
   }
 }
@@ -184,15 +188,15 @@ p {
     padding: 2vw;
   }
 
-  .about, .cv p, ol li {
+  .about, .cv p, li {
     width: 63.3vw;
   }
 
-  ol li, ol li p {
+  li, li p {
     margin-bottom: 2vw;
   }
 
-  ol {
+  ol, ul {
     padding-inline-start: 4.5vw;
   }
 }
@@ -217,15 +221,15 @@ p {
     padding: 1vw;
   }
 
-  .about, .cv p, ol li {
+  .about, .cv p, li {
     width: 48vw;
   }
 
-  ol li, ol li p {
+  li, li p{
     margin-bottom: 1vw;
   }
 
-  ol {
+  ol, ul {
     padding-inline-start: 3vw;
   }
 }
