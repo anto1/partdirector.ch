@@ -22,6 +22,15 @@
   color: #222222;
 }
 
+h1, footer, .switcher, a {
+  color: ;
+}
+
+table td, .subtitle {
+  vertical-align: top;
+  font-size: 66%;
+}
+
 .container {
   display: grid;
 }
@@ -51,8 +60,17 @@ p {
   margin-bottom: 0;
 }
 
-.about p:first-child {
+.about p:first-child, .credits p:first-child {
   margin-block-start: 0;
+}
+
+.about img {
+  width: inherit;
+  margin-top: 2vw;
+}
+
+.credits {
+  background: #f3f3f3;
 }
 
 /* Media Queries */
@@ -97,13 +115,26 @@ p {
     padding-bottom: 50vw;
   }
 
-  .about {
+  td {
+    padding-right: 5vw;
+  }
+
+  .spacer {
+    padding-bottom: 5vw;
+  }
+
+  .about, .credits {
     margin-top: 5vw;
   }
 
   .header {
     display: block;
     height: 90vw;
+  }
+
+  .header h1 {
+    position: sticky;
+    top: 5vw;
   }
 
   .container {
@@ -118,6 +149,10 @@ p {
 
   .about, .cv p {
     width: auto;
+  }
+
+  .credits {
+    padding: 5vw;
   }
 
   li, li p {
@@ -140,13 +175,30 @@ p {
     padding-bottom: 12vw;
   }
 
+  td {
+    padding-right: 3vw;
+  }
+
+  .spacer {
+    padding-bottom: 3vw;
+  }
+
   .about {
     margin-top: 3vw;
+  }
+
+  .credits {
+    padding: 3vw;
   }
 
   .header {
     display: block;
     height: 45vw;
+  }
+
+  .header h1 {
+    position: sticky;
+    top: 3vw;
   }
 
   .container {
@@ -155,7 +207,7 @@ p {
     grid-gap: 3vw;}
 
   .container div, footer, .switcher {
-      padding: 3vw;
+    padding: 3vw;
   }
 
   .about, .cv p {
@@ -181,13 +233,30 @@ p {
     padding-bottom: 12vw;
   }
 
+  td {
+    padding-right: 2vw;
+  }
+
+  .spacer {
+    padding-bottom: 2vw;
+  }
+
   .about {
     margin-top: 2vw;
+  }
+
+  .credits {
+    padding: 2vw;
   }
 
   .header {
     display: block;
     height: 30vw;
+  }
+
+  .header h1 {
+    position: sticky;
+    top: 2vw;
   }
 
   .container {
@@ -223,13 +292,30 @@ p {
     padding-bottom: 12vw;
   }
 
+  td {
+    padding-right: 1vw;
+  }
+
+  .spacer {
+    padding-bottom: 1vw;
+  }
+
   .about {
     margin-top: 1vw;
+  }
+
+  .credits {
+    padding: 1vw;
   }
 
   .header {
     display: block;
     height: 20vw;
+  }
+
+  .header h1 {
+    position: sticky;
+    top: 1vw;
   }
 
   .container {
