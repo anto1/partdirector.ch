@@ -41,6 +41,7 @@ table td, .subtitle {
   aspect-ratio: 1;
   justify-content: left;
   background-size: cover;
+  scroll-snap-type: y mandatory;
 }
 
 footer, .switcher {
