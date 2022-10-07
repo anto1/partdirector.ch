@@ -75,6 +75,24 @@ p {
   background: #f3f3f3;
 }
 
+.sketches {
+  background: #121214;
+  display: block;
+  position: relative;
+  width: 96vw;
+  padding: 2vw;
+  margin: 2vw 0;
+  left: -2vw;
+}
+
+.sketches img, .sketches p {
+  width: 63.3vw;
+}
+
+.sketches p {
+  color: #f3f3f3;
+}
+
 /* Media Queries */
 
 .hidden {
@@ -157,6 +175,17 @@ p {
     padding: 5vw;
   }
 
+  .sketches {
+    width: 90vw;
+    padding: 5vw;
+    margin: 5vw 0;
+    left: -5vw;
+  }
+
+  .sketches img, .sketches p {
+    width: 90vw;
+  }
+
   li, li p {
     margin-bottom: 5vw;
   }
@@ -164,6 +193,8 @@ p {
   ol {
     padding-inline-start: 9vw;
   }
+
+
 
 }
 
@@ -213,8 +244,20 @@ p {
   }
 
   .about, .cv p {
+    width: 94vw;
+  }
+
+  .sketches {
+    width: 94vw;
+    padding: 3vw;
+    margin: 3vw 0;
+    left: -3vw;
+  }
+
+  .sketches img, .sketches p {
     width: 80vw;
   }
+
 
   li, li p{
     margin-bottom: 3vw;
@@ -272,6 +315,17 @@ p {
   }
 
   .about, .cv p, li {
+    width: 63.3vw;
+  }
+
+  .sketches {
+    width: 96vw;
+    padding: 2vw;
+    margin: 2vw 0;
+    left: -2vw;
+  }
+
+  .sketches img, .sketches p {
     width: 63.3vw;
   }
 
@@ -333,6 +387,19 @@ p {
   .about, .cv p, li {
     width: 48vw;
   }
+
+  .sketches {
+    width: 98vw;
+    padding: 1vw;
+    margin: 1vw 0;
+    left: -1vw;
+  }
+
+  .sketches img, .sketches p {
+    width: 48vw;
+  }
+
+
 
   li, li p{
     margin-bottom: 1vw;
