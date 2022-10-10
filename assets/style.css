@@ -276,24 +276,24 @@ p {
   }
 
   body {
-    margin: 2vw;
+    margin: 1vw;
     padding-bottom: 12vw;
   }
 
   td {
-    padding-right: 2vw;
+    padding-right: 1vw;
   }
 
   .spacer {
-    padding-bottom: 2vw;
+    padding-bottom: 1vw;
   }
 
   .about {
-    margin-top: 2vw;
+    margin-top: 1vw;
   }
 
   .credits {
-    padding: 2vw;
+    padding: 1vw;
   }
 
   .header {
@@ -303,17 +303,17 @@ p {
 
   .header h1 {
     position: sticky;
-    top: 2vw;
+    top: 1vw;
   }
 
   .container {
-    margin-top: 2vw;
+    margin-top: 1vw;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2vw;
+    grid-gap: 1vw;
   }
 
   .container div, footer, .switcher {
-    padding: 2vw;
+    padding: 1vw;
   }
 
   .about, .cv p, li {
@@ -321,10 +321,10 @@ p {
   }
 
   .sketches {
-    width: 96vw;
-    padding: 2vw;
-    margin-top: 2vw;
-    left: -2vw;
+    width: 98vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    left: -1vw;
   }
 
   .sketches img, .sketches p {
@@ -332,7 +332,7 @@ p {
   }
 
   li, li p {
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
   }
 
   ol {
