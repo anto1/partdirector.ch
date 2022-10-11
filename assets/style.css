@@ -71,10 +71,6 @@ p {
   width: 100%;
 }
 
-.credits {
-  background: #f3f3f3;
-}
-
 .sketches {
   background: #121214;
   display: block;
@@ -173,10 +169,6 @@ p {
     width: auto;
   }
 
-  .credits {
-    padding: 2vw;
-  }
-
   .sketches {
     width: 96vw;
     padding: 2vw;
@@ -222,9 +214,6 @@ p {
     margin-top: 1vw;
   }
 
-  .credits {
-    padding: 1vw;
-  }
 
   .header {
     display: block;
@@ -292,9 +281,6 @@ p {
     margin-top: 0.5vw;
   }
 
-  .credits {
-    padding: 0.5vw;
-  }
 
   .header {
     display: block;
@@ -362,9 +348,6 @@ p {
     margin-top: 0.25vw;
   }
 
-  .credits {
-    padding: 0.25vw;
-  }
 
   .header {
     display: block;
