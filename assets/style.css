@@ -294,7 +294,7 @@ p {
 
   .container {
     margin-top: 1vw;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1vw;
   }
 
@@ -360,7 +360,7 @@ p {
 
   .container {
     margin-top: 1vw;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1vw;
   }
 
