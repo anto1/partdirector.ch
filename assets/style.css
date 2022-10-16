@@ -67,18 +67,19 @@ p {
 
 .about img {
   width: inherit;
-  margin-top: 0.5vw;
+  margin-top: 2vw;
   width: 100%;
 }
+
 
 .sketches {
   background: #121214;
   display: block;
   position: relative;
-  width: 98vw;
-  padding: 0.5vw;
-  margin-top: 0.5vw;
-  left: -0.5vw;
+  width: 96vw;
+  padding: 2vw;
+  margin-top: 2vw;
+  left: -2vw;
 }
 
 .sketches img, .sketches p {
@@ -103,7 +104,7 @@ p {
 
 .hidden.open {
     max-height: 500px;
-    margin-top: 0.5vw;
+    margin-top: 2vw;
      -webkit-transition: max-height, 0.5s;
     -moz-transition: max-height, 0.5s;
     -ms-transition: max-height, 0.5s;
@@ -134,15 +135,15 @@ p {
   }
 
   td {
-    padding-right: 2vw;
+    padding-right: 5vw;
   }
 
   .spacer {
-    padding-bottom: 2vw;
+    padding-bottom: 5vw;
   }
 
   .about, .credits {
-    margin-top: 2vw;
+    margin-top: 5vw;
   }
 
   .header {
@@ -152,17 +153,17 @@ p {
 
   .header h1 {
     position: sticky;
-    top: 2vw;
+    top: 5vw;
   }
 
   .container {
-    margin-top: 2vw;
+    margin-top: 5vw;
     grid-template-columns: 1fr;
-    grid-gap: 2vw;
+    grid-gap: 5vw;
   }
 
   .container div, footer, .switcher {
-    padding: 2vw;
+    padding: 5vw;
   }
 
   .about, .cv p {
@@ -170,10 +171,10 @@ p {
   }
 
   .sketches {
-    width: 96vw;
-    padding: 2vw;
-    margin-top: 2vw;
-    left: -2vw;
+    width: 90vw;
+    padding: 5vw;
+    margin-top: 5vw;
+    left: -5vw;
   }
 
   .sketches img, .sketches p {
@@ -181,7 +182,7 @@ p {
   }
 
   li, li p {
-    margin-bottom: 2vw;
+    margin-bottom: 5vw;
   }
 
   ol {
@@ -195,6 +196,72 @@ p {
 @media screen and (min-width: 560px) {
   h1, h2, h3, div, body {
     font-size: 5vw;
+  }
+
+  body {
+    margin: 3vw;
+    padding-bottom: 12vw;
+  }
+
+  td {
+    padding-right: 3vw;
+  }
+
+  .spacer {
+    padding-bottom: 3vw;
+  }
+
+  .about {
+    margin-top: 3vw;
+  }
+
+  .header {
+    display: block;
+    height: 45vw;
+  }
+
+  .header h1 {
+    position: sticky;
+    top: 3vw;
+  }
+
+  .container {
+    margin-top: 3vw;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw;}
+
+  .container div, footer, .switcher {
+    padding: 3vw;
+  }
+
+  .about, .cv p {
+    width: 94vw;
+  }
+
+  .sketches {
+    width: 94vw;
+    padding: 3vw;
+    margin-top: 3vw;
+    left: -3vw;
+  }
+
+  .sketches img, .sketches p {
+    width: 80vw;
+  }
+
+
+  li, li p{
+    margin-bottom: 3vw;
+  }
+
+  ol {
+    padding-inline-start: 7vw;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  h1, h2, h3, div, body {
+    font-size: 3vw;
   }
 
   body {
@@ -217,7 +284,7 @@ p {
 
   .header {
     display: block;
-    height: 45vw;
+    height: 30vw;
   }
 
   .header h1 {
@@ -227,15 +294,16 @@ p {
 
   .container {
     margin-top: 1vw;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1vw;}
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+  }
 
   .container div, footer, .switcher {
     padding: 1vw;
   }
 
-  .about, .cv p {
-    width: 94vw;
+  .about, .cv p, li {
+    width: 63.3vw;
   }
 
   .sketches {
@@ -246,79 +314,11 @@ p {
   }
 
   .sketches img, .sketches p {
-    width: 80vw;
-  }
-
-
-  li, li p{
-    margin-bottom: 1vw;
-  }
-
-  ol {
-    padding-inline-start: 7vw;
-  }
-}
-
-@media screen and (min-width: 960px) {
-  h1, h2, h3, div, body {
-    font-size: 3vw;
-  }
-
-  body {
-    margin: 0.5vw;
-    padding-bottom: 12vw;
-  }
-
-  td {
-    padding-right: 0.5vw;
-  }
-
-  .spacer {
-    padding-bottom: 0.5vw;
-  }
-
-  .about {
-    margin-top: 0.5vw;
-  }
-
-
-  .header {
-    display: block;
-    height: 30vw;
-  }
-
-  .header h1 {
-    position: sticky;
-    top: 0.5vw;
-  }
-
-  .container {
-    margin-top: 0.5vw;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5vw;
-  }
-
-  .container div, footer, .switcher {
-    padding: 0.5vw;
-  }
-
-  .about, .cv p, li {
-    width: 63.3vw;
-  }
-
-  .sketches {
-    width: 99vw;
-    padding: 0.5vw;
-    margin-top: 0.5vw;
-    left: -0.5vw;
-  }
-
-  .sketches img, .sketches p {
     width: 63.3vw;
   }
 
   li, li p {
-    margin-bottom: 0.5vw;
+    margin-bottom: 1vw;
   }
 
   ol {
@@ -332,22 +332,21 @@ p {
   }
 
   body {
-    margin: 0.25vw;
+    margin: 1vw;
     padding-bottom: 12vw;
   }
 
   td {
-    padding-right: 0.25vw;
+    padding-right: 1vw;
   }
 
   .spacer {
-    padding-bottom: 0.25vw;
+    padding-bottom: 1vw;
   }
 
   .about {
-    margin-top: 0.25vw;
+    margin-top: 1vw;
   }
-
 
   .header {
     display: block;
@@ -356,17 +355,17 @@ p {
 
   .header h1 {
     position: sticky;
-    top: 0.25vw;
+    top: 1vw;
   }
 
   .container {
-    margin-top: 0.25vw;
+    margin-top: 1vw;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 0.25vw;
+    grid-gap: 1vw;
   }
 
   .container div, footer, .switcher {
-    padding: 0.25vw;
+    padding: 1vw;
   }
 
   .about, .cv p, li {
@@ -374,20 +373,18 @@ p {
   }
 
   .sketches {
-    width: 99.5vw;
-    padding: 0.25vw;
-    margin-top: 0.25vw;
-    left: -0.25vw;
+    width: 98vw;
+    padding: 1vw;
+    margin-top: 1vw;
+    left: -1vw;
   }
 
   .sketches img, .sketches p {
     width: 48vw;
   }
 
-
-
   li, li p{
-    margin-bottom: 0.25vw;
+    margin-bottom: 1vw;
   }
 
   ol {
