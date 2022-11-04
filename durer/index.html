@@ -6,6 +6,8 @@
 
     <title>Dürer</title>
     <link rel="stylesheet" href="https://webfonts.fontstand.com/WF-000923-6e7e11e6965089bb40cd05db8c04507d.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
 
     <style media="screen">
 
@@ -151,7 +153,8 @@
 
     <p class="number">3</p>
     <h1>We believe</h1>
-    <h2>that in the future, not only engineers will be able to train AI. We make Dürer so that anyone can create their own projects with AI&nbsp;algorithms</h2>
+    <h2>that in the future, not only engineers will be able to train AI.</h2>
+    <p>We make Dürer so that anyone can create their own projects with AI&nbsp;algorithms</p>
 
     <p class="number">4</p>
     <h1>Join our community</h1>
@@ -169,6 +172,35 @@
     </div>
 
     <footer>Durer Ai LTD · UK · 2022</footer>
+    <script>
+    var header = document.getElementById('h2');
+
+    function fadeOutOnScroll(element) {
+    	if (!element) {
+    		return;
+    	}
+
+    	var distanceToTop = window.pageYOffset + element.getBoundingClientRect().top;
+    	var elementHeight = element.offsetHeight;
+    	var scrollTop = document.documentElement.scrollTop;
+
+    	var opacity = 1;
+
+    	if (scrollTop > distanceToTop) {
+    		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+    	}
+
+    	if (opacity >= 0) {
+    		element.style.opacity = opacity;
+    	}
+    }
+
+    function scrollHandler() {
+    	fadeOutOnScroll(header);
+    }
+
+    window.addEventListener('scroll', scrollHandler);
+    </script>
 
   </body>
 </html>
