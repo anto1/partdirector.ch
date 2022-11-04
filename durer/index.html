@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dürer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style media="screen">
+
+      * {
+        padding: 0;
+        margin: 0;
+        font-family: "Roboto Mono";
+      }
+
+      body {
+        background: #F7EADE;
+        color: #433833;
+        padding: 24px;
+      }
+
+      small, footer {
+        font-size: 24px;
+        line-height: 32px;
+        display: block;
+        width: 40%;
+      }
+
+      footer {
+        margin-top: 240px;
+      }
+
+      h1 {
+        margin-top: 240px;
+        font-size: 196px;
+        line-height: 148px;
+      }
+
+      h2 {
+        width: 80%;
+        font-style: normal;
+        font-weight: 700;
+
+        display: block;
+        margin: 24px 0;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 24px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 25vw;
+        padding: 24px;
+
+        margin: 24px 0;
+  }
+
+      .links {
+        margin: 12px 0;
+      }
+
+
+      div p:first-child {
+        font-weight: bold;
+      }
+
+      a {
+        background: #433833;
+        border-radius: 24px;
+        color: white;
+        text-decoration: none;
+        padding: 24px 80px;
+        margin: 12px 0;
+        display: inline-block;
+      }
+
+      a:hover {
+        background: linear-gradient(0deg, rgba(245, 82, 58, 0.5), rgba(245, 82, 58, 0.5)), #433833;
+      }
+
+      a:active{
+        background: linear-gradient(0deg, rgba(67, 56, 51, 0.5), rgba(67, 56, 51, 0.5)), #433833;
+        background-blend-mode: multiply, normal;
+      }
+
+      hr {
+        border: 0.5px solid #433833;
+        margin: 12px 0;
+      }
+
+      input {
+        font-size: 56px;
+        line-height: 56px;
+        border-radius: 24px;
+        border: 0px;
+        margin: 24px 0;
+      }
+
+      @media (min-width: 0px) {
+        h1 img {
+          width: 75vw;
+        }
+
+        h2, a {
+          font-size: 32px;
+          line-height: 32px;
+        }
+
+        div p {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        .card {
+          width: 75vw;
+          gap: 12px;
+        }
+      }
+      @media (min-width: 960px) {
+
+        h1 img {
+          max-width: 720px;
+        }
+
+        h2, a {
+          font-size: 56px;
+          line-height: 56px;
+        }
+
+        div p {
+          font-size: 24px;
+          line-height: 32px;
+        }
+
+        .card {
+          width: 25vw;
+          gap: 24px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <small>Welcome a platform that allows each person to modify AI models to implement their ideas</small>
+    <h1><img src="Dürer.svg"></h1>
+    <h2>is made for people to create their own&nbsp;cards (author's trained AI models) and&nbsp;share&nbsp;them</h2>
+    <hr></hr>
+    <div class="container">
+      <div class="card">
+        <p>What does Dürer&nbsp;do?</p>
+        <p>We publish cards that our community of authors makes, give users the opportunity to apply them in their projects, and artists earn money by creating author's modifications of artificial intelligence</p>
+      </div>
+      <div class="card">
+        <p>Why are we making Dürer?</p>
+        <p>We believe that AI technology is a tool that can help everyone realize their ideas and make their daily life more convenient. Now only people with professional knowledge can make their cards</p>
+        <p>We want all people who have imagination and imagination to be able to train artificial intelligence and help each other realize their dreams</p>
+      </div>
+      <div class="card">
+        <p>What is a card?</p>
+        <p>The card is a modification of the artificial intelligence model, which allows you to implement the author's ideas</p>
+      </div>
+    </div>
+    <hr></hr>
+    <h2>Join our community of authors and&nbsp;researchers</h2>
+    <div class="links">
+      <a href="#">Discord</a> <a href="#">Twitter</a> <a href="#">Email us</a>
+    </div>
+    <footer>20221031</footer>
+  </body>
+</html>
