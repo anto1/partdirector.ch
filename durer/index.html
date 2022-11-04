@@ -18,179 +18,52 @@
         font-family: "Roboto Mono";
       }
 
-      body {
-        background: #F7EADE;
-        color: #433833;
-        padding: 24px;
-      }
-
-      small, footer {
-        font-size: 24px;
-        line-height: 32px;
-        display: block;
-        width: 40%;
-      }
-
-      footer {
-        margin-top: 240px;
-      }
-
-      h1 {
-        margin-top: 240px;
-        font-size: 196px;
-        line-height: 148px;
-      }
-
-      h2 {
-        width: 80%;
-        font-style: normal;
-        font-weight: 700;
-
-        display: block;
-        margin: 24px 0;
-      }
-
-      .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-start;
-        padding: 0px;
-        gap: 24px;
-
-      }
-
-      .card {
-        background-color: white;
-        border-radius: 24px;
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        width: 25vw;
-        padding: 24px;
-
-        margin: 24px 0;
-  }
-
-      .links {
-        margin: 12px 0;
-      }
-
-
-      div p:first-child {
-        font-weight: bold;
-      }
-
-      a {
-        background: #433833;
-        border-radius: 24px;
-        color: white;
-        text-decoration: none;
-        padding: 24px 80px;
-        margin: 12px 0;
-        display: inline-block;
-      }
-
-      a:hover {
-        background: linear-gradient(0deg, rgba(245, 82, 58, 0.5), rgba(245, 82, 58, 0.5)), #433833;
-      }
-
-      a:active{
-        background: linear-gradient(0deg, rgba(67, 56, 51, 0.5), rgba(67, 56, 51, 0.5)), #433833;
-        background-blend-mode: multiply, normal;
-      }
-
-      hr {
-        border: 0.5px solid #433833;
-        margin: 12px 0;
-      }
-
-      input {
-        font-size: 56px;
-        line-height: 56px;
-        border-radius: 24px;
-        border: 0px;
-        margin: 24px 0;
-      }
-
       @media screen and (min-width: 0px) {
-        h1 img {
-          width: 75vw;
-        }
 
-        h2, a {
-          font-size: 24px;
-          line-height: 24px;
-        }
-
-        div p {
-          font-size: 16px;
-          line-height: 20px;
-        }
-
-        .card {
-          width: 75vw;
-          gap: 12px;
-        }
       }
+
       @media screen and (min-width: 960px) {
-
-        h1 img {
-          max-width: 720px;
-        }
-
-        h2, a {
-          font-size: 40px;
-          line-height: 40px;
-        }
-
-        div p {
-          font-size: 20px;
-          line-height: 32px;
-        }
-
-        .card {
-          width: 25vw;
-          gap: 24px;
-        }
       }
+
     </style>
   </head>
   <body>
-    <small>Welcome a platform that allows each person to modify AI models to implement their ideas</small>
-    <h1>
-      <svg width="633" height="168" viewBox="0 0 633 168" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 16.5212V165.522H47.8082C89.834 165.522 111.312 139.914 111.312 89.9373C111.312 41.716 89.5243 16.5212 47.8082 16.5212H0ZM29.3251 41.8193H43.7812C69.1825 41.8193 81.3669 57.6177 81.3669 90.4536C81.3669 124.735 69.5956 140.224 43.7812 140.224H29.3251V41.8193Z" fill="#433833"/>
-      <path d="M159.739 31.3903C168 31.3903 174.918 24.2655 174.918 15.6951C174.918 7.12477 168 0 159.739 0C151.479 0 144.561 7.12477 144.561 15.6951C144.561 24.2655 151.479 31.3903 159.739 31.3903ZM207.341 31.3903C215.602 31.3903 222.623 24.2655 222.623 15.6951C222.623 7.12477 215.602 0 207.341 0C199.184 0 192.162 7.12477 192.162 15.6951C192.162 24.2655 199.184 31.3903 207.341 31.3903ZM234.291 51.6288H206.102V117.507C206.102 133.202 196.706 143.218 182.25 143.218C167.897 143.218 161.185 135.267 161.185 118.54V51.6288H132.892V125.355C132.892 153.131 146.109 168 170.891 168C187.309 168 199.597 160.152 205.173 146.419H206.928V165.522H234.291V51.6288Z" fill="#433833"/>
-      <path d="M312.147 115.029C312.147 90.5569 325.261 78.3725 352.108 78.3725C358.51 78.3725 365.945 79.7148 371.108 81.6767V51.0092C367.081 49.4604 361.298 48.6343 354.896 48.6343C333.419 48.6343 321.75 58.2372 316.794 80.8506H312.354V51.6288H261.345V72.4868H285.094V144.767H263.41V165.522H345.19V144.767H312.147V115.029Z" fill="#433833"/>
-      <path d="M469.718 133.512C467.653 140.947 458.67 146.109 447.312 146.109C432.546 146.109 422.943 136.403 422.943 121.534V115.339H496.359V99.6435C496.359 69.0793 477.05 49.2538 446.899 49.2538C415.921 49.2538 395.27 68.976 395.27 98.8175V117.094C395.27 149.414 414.269 168 447.415 168C473.849 168 493.984 153.647 496.359 133.512H469.718ZM446.382 71.1444C460.632 71.1444 469.099 80.9539 469.099 97.2686H422.943C422.943 80.9539 431.72 71.1444 446.382 71.1444Z" fill="#433833"/>
-      <path d="M573.596 115.029C573.596 90.5569 586.709 78.3725 613.556 78.3725C619.958 78.3725 627.393 79.7148 632.556 81.6767V51.0092C628.529 49.4604 622.746 48.6343 616.344 48.6343C594.867 48.6343 583.198 58.2372 578.242 80.8506H573.802V51.6288H522.793V72.4868H546.542V144.767H524.858V165.522H606.638V144.767H573.596V115.029Z" fill="#433833"/>
-      </svg>
-    </h1>
-    <h2>is made for people to create their own&nbsp;cards (author's trained AI models) and&nbsp;share&nbsp;them</h2>
-    <hr></hr>
-    <div class="container">
-      <div class="card">
-        <p>What does Dürer&nbsp;do?</p>
-        <p>We publish cards that our community of authors makes, give users the opportunity to apply them in their projects, and artists earn money by creating author's modifications of artificial intelligence</p>
-      </div>
-      <div class="card">
-        <p>Why are we making Dürer?</p>
-        <p>We believe that AI technology is a tool that can help everyone realize their ideas and make their daily life more convenient. Now only people with professional knowledge can make their cards</p>
-        <p>We want all people who have imagination and imagination to be able to train artificial intelligence and help each other realize their dreams</p>
-      </div>
-      <div class="card">
-        <p>What is a card?</p>
-        <p>The card is a modification of the artificial intelligence model, which allows you to implement the author's ideas</p>
-      </div>
+    Durer
+    <p>is a place where you can create AI tools and share them with others</p>
+
+    <p>1</p>
+
+    <h1>Engineers</h1>
+    <h2>create AI tools using machine learning models</h2>
+    <p>They train these models and tune them to perform a range of tasks, starting with mere help in content editing and reaching all the way to the generation of creative content using a request in plain English language or even a photo reference.</p>
+    <p>You can try new wallpapers for your bedroom without ever leaving the house, create emojis inspired by your own selfie—or even train AI to mimic Slavoj Žižek in conversations. Every day, hundreds of AI projects are published.</p>
+    <p>However, only engineers can use this tech to create AI-powered projects.</p>
+
+    <p>2</p>
+    <h1>Dürer is a platform
+    <h2>that bridges the gap between the never-ending flow of fascinating and complex AI technology for a content generation—and the immense creative potential in the hands and minds of people unfamiliar with machine learning and software engineering
+    <h2>We are building a platform for a community of enthusiasts so that they can share their creations and learn from each other.
+
+    <p>3</p>
+    <h1>We believe
+    <h2>that in the future, not only engineers will be able to train AI. We make Dürer so that anyone can create their own projects with AI algorithms
+
+    <p>4</p>
+    <h1>Join our community
+    <h2>to share, use and create your own AI tools
+
+    <div>
+      <p>4.1</p>
+      <h3>Share your project</h3>
+      <p>Every day hundreds of new AI projects are published on the internet. It's difficult not to miss something new. We monitor the Internet and list all the tools and projects that you might find handy or inspiring. If you know of any that we don’t feature—or want to share yours—send it to us.</p>
     </div>
-    <hr></hr>
-    <h2>Join our community of authors and&nbsp;researchers</h2>
-    <div class="links">
-      <a href="#">Discord</a> <a href="#">Twitter</a> <a href="#">Email us</a>
+    <div>
+      <p>4.2
+      <h3>Train a model
+      <p>Recent generative AI models are enormously powerful—but out of the box, they are mere toys. When you try to use them for your day-to-day tasks, you hit the wall of imperfections. It’s difficult for those models to understand your context. They can give unpredictable results just because they lacked good enough training references for your particular task. It’s easy to get a set of pictures of a brutalist housing estate, but you can hardly get that estate rendered as an embroidery pattern.</p>
+      <p>To overcome these limitations, you need to be well-versed in programming or at least tech-savvy to translate your requirements into complex terms using unfriendly interfaces. If you have an idea for a project that needs AI but you struggle with coding or engineering tools—join our Discord community, and we will try to help.</p>
     </div>
-    <footer>20221031</footer>
+
+    <p>Durer Ai LTD · UK · 2022</p>
   </body>
 </html>
