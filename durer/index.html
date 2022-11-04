@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Dürer</title>
-
     <link rel="stylesheet" href="https://webfonts.fontstand.com/WF-000923-6e7e11e6965089bb40cd05db8c04507d.css" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <style media="screen">
 
@@ -35,13 +35,14 @@
         display: block;
         border-bottom: 1px solid rgba(68, 94, 131, 0.25);
         padding-bottom: 24px;
-        margin: 72px 0 24px 0;
-        width: 100%;
+        margin: 96px 0 24px 0;
+        width: 100% !important;
       }
 
       header {
         border-bottom: 1px solid rgba(68, 94, 131, 0.25);
-        margin-bottom: 120px;
+        margin-bottom: 240px;
+        padding-bottom: 24px;
       }
 
       footer {
@@ -78,6 +79,11 @@
           line-height: 24px;
         }
 
+        .logomark {
+          width: 75%;
+          max-width: 360px;
+        }
+
       }
 
       @media screen and (min-width: 960px) {
@@ -96,8 +102,12 @@
           line-height: 24px;
         }
 
-        h1, h2, h3, p, div {
+        h1, h2, h3, p:not(.number), div {
           max-width: 960px;
+        }
+
+        .logomark {
+          max-width: 360px;
         }
       }
 
@@ -105,7 +115,7 @@
   </head>
   <body>
     <header>
-      <svg width="360" height="84" viewBox="0 0 360 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg class="logomark" viewBox="0 0 360 84" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M22.9164 83.9869C45.2329 83.9869 64.19 65.1498 64.19 41.9934C64.19 18.8371 45.2329 0 22.9164 0H0V83.9869H22.9164ZM21.7166 65.9897C19.6769 65.9897 17.9972 64.31 17.9972 62.2703V21.7166C17.9972 19.6769 19.6769 17.9972 21.7166 17.9972H22.1965C35.0345 17.9972 45.5929 28.7955 45.5929 41.9934C45.5929 55.1914 35.0345 65.9897 22.1965 65.9897H21.7166Z" fill="#3788F7"/>
       <path d="M90 20.3968C95.7591 20.3968 100.198 15.7175 100.198 10.1984C100.198 4.43931 95.7591 0 90 0C84.4809 0 79.8016 4.43931 79.8016 10.1984C79.8016 15.7175 84.4809 20.3968 90 20.3968ZM118.795 20.3968C124.315 20.3968 128.994 15.7175 128.994 10.1984C128.994 4.43931 124.315 0 118.795 0C113.276 0 108.597 4.43931 108.597 10.1984C108.597 15.7175 113.276 20.3968 118.795 20.3968ZM136.793 83.9869V28.7955H118.795V52.5518C118.795 61.4304 112.676 67.7894 104.398 67.7894C95.7591 67.7894 90 61.6704 90 52.5518V28.7955H72.0028V52.1918C72.0028 71.2689 84.7208 83.9869 103.798 83.9869H136.793Z" fill="#3788F7"/>
       <path d="M169.202 83.9869V54.7115C169.202 49.6722 172.801 46.0728 177.72 46.0728H201.837C207.236 46.0728 211.195 42.5933 211.195 37.4342C211.195 32.275 207.236 28.7955 201.837 28.7955H151.204V83.9869H169.202Z" fill="#3788F7"/>
@@ -150,5 +160,9 @@
     </div>
 
     <footer>Durer Ai LTD · UK · 2022</footer>
+
+    <script>
+      $("p").each(function(index) {$(this).delay(400*index).fadeIn(300);});
+    </script>
   </body>
 </html>
